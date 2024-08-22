@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Gym System</h1>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Members</a></li>
+                <li><a href="#">Gym Equipment</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Manage Customer Progress</a></li>
+                <li><a href="#">Member's Status</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Announcement</a></li>
+                <li><a href="#">Staff Management</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Welcome Admin</h2>
+            <div class="dashboard">
+                <div class="dashboard-item active">
+                    <h3>Active Members</h3>
+                    <div class="count">16</div>
+                </div>
+                <div class="dashboard-item registered">
+                    <h3>Registered Members</h3>
+                    <div class="count">17</div>
+                </div>
+                <div class="dashboard-item earnings">
+                    <h3>Total Earnings</h3>
+                    <div class="count">$2690</div>
+                </div>
+                <div class="dashboard-item announcements">
+                    <h3>Announcements</h3>
+                    <div class="count">4</div>
+                </div>
+            </div>
+            <h2>Services Report</h2>
+            <div class="services-report">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Cardio</th>
+                            <th>Fitness</th>
+                            <th>Sauna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Earnings & Expenses Reports</h2>
+            <div class="chart-container1">
+                <div class="chart-title">
+                    <h3>Total</h3>
+                    <div class="chart-axis">
+                        <span>0</span>
+                        <span>1K</span>
+                        <span>2K</span>
+                        <span>3K</span>
+                        <span>4K</span>
+                        <span>5K</span>
+                        <span>6K</span>
+                        <span>7K</span>
+                        <span>8K</span>
+                        <span>9K</span>
+                    </div>
+                </div>
+                <div class="chart-bar">
+                    <div class="chart-bar-item earnings">
+                        <div class="chart-bar-label">Earnings</div>
+                        <div class="chart-bar-fill" id="earnings-bar" style="width: 280px;"></div>
+                    </div>
+                    <div class="chart-bar-item expenses">
+                        <div class="chart-bar-label">Expenses</div>
+                        <div class="chart-bar-fill" id="expenses-bar" style="width: 800px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="dashboard-card total">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <div class="count">17</div>
+                    <div class="label">Total Members</div>
+                </div>
+                <div class="dashboard-card staff">
+                    <div class="icon"><i class="fas fa-user-clock"></i></div>
+                    <div class="count">4</div>
+                    <div class="label">Staff Users</div>
+                </div>
+                <div class="dashboard-card available">
+                    <div class="icon"><i class="fas fa-dumbbell"></i></div>
+                    <div class="count">6</div>
+                    <div class="label">Available Equipments</div>
+                </div>
+                <div class="dashboard-card texpen">
+                    <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <div class="count">$8060</div>
+                    <div class="label">Total Expenses</div>
+                </div>
+                <div class="dashboard-card gymtrain">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="count">2</div>
+                    <div class="label">Active Gym Trainers</div>
+                </div>
+                <div class="dashboard-card present">
+                    <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="count">0</div>
+                    <div class="label">Present Members</div>
+                </div>
+            </div>
+
+            
+
+            
+            <div class="chart-container">
+                <h2>Registered Gym Members by Gender: Overview</h2>
+                <div class="chart-pie">
+                    <div class="chart-pie-item female" style="width: 50%; height: 50%;"></div>
+                    <div class="chart-pie-item male" style="width: 50%; height: 50%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="chart-legend-item female">
+                        <div class="chart-legend-color female"></div>
+                        <div class="chart-legend-label">Female</div>
+                    </div>
+                    <div class="chart-legend-item male">
+                        <div class="chart-legend-color male"></div>
+                        <div class="chart-legend-label">Male</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="chart-container">
+                <h2>Staff Members by Designation: Overview</h2>
+                <div class="chart-pie">
+                    <div class="chart-pie-item cashier" style="width: 50%; height: 50%;"></div>
+                    <div class="chart-pie-item trainer" style="width: 50%; height: 50%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="chart-legend-item cashier">
+                        <div class="chart-legend-color cashier"></div>
+                        <div class="chart-legend-label">Cashier</div>
+                    </div>
+                    <div class="chart-legend-item trainer">
+                        <div class="chart-legend-color trainer"></div>
+                        <div class="chart-legend-label">Trainer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-1">
+            <div class="left-column1">
+              <h2>Gym Announcement</h2>
+              <div class="announcement-item1">
+                <span class="icon">&#9819;</span>
+                <h4>By: System Administrator / Date: 2020-03-30</h4>
+                <p>This is to announce that our GYM will remain close for 51 days due to COVID-19.</p>
+              </div>
+              <div class="announcement-item1">
+                <span class="icon">&#9819;</span>
+                <h4>By: System Administrator / Date: 2020-04-03</h4>
+                <p>Opening of GYM Halls and Clubs are not fixed yet. Stay tuned for more updates!!</p>
+              </div>
+              <div class="announcement-item1">
+                <span class="icon">&#9819;</span>
+                <h4>By: System Administrator / Date: 2020-04-04</h4>
+                <p>Renovation Going On...</p>
+              </div>
+              <div class="announcement-item1">
+                <span class="icon">&#9819;</span>
+                <h4>By: System Administrator / Date: 2022-06-03</h4>
+                <p>This is a demo announcement from admin</p>
+              </div>
+              <a href="#" class="view-all">View All</a>
+            </div>
+    
+    
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Cardio', 'Fitness', 'Sauna'],
+                    datasets: [{
+                        label: 'Total',
+                        data: [6, 9, 2],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 99, 132, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
